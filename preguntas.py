@@ -155,8 +155,11 @@ def pregunta_09():
     39   39   E    5  1998-01-26  1998
 
     """
+    tbl9=tbl0.copy()
+    tbl9['year']= tbl0._c3
+    tbl9['year']=tbl9['year'].apply(lambda x: x[0:4])
 
-    return 
+    return tbl9
 
 
 def pregunta_10():
